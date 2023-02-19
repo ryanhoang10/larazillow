@@ -12,13 +12,6 @@ class IndexController extends Controller
 
         $listing = Listing::find(10);
         
-        dd(
-            Listing::query()
-                ->where('beds', '>=', 4)
-                ->orderBy('price', 'asc')
-                ->get()
-                
-        );
         return inertia(
             'Index/Index', 
             [
