@@ -3,15 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Listing;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 
 class ListingController extends Controller
 {
     public function index()
     {
-        
         return inertia(
             'Listing/Index', 
             [
