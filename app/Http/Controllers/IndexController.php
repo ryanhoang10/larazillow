@@ -10,7 +10,7 @@ class IndexController extends Controller
     public function index()
     {
 
-        $listing = Listing::find(10);
+        // $listing = Listing::find(10);
         
         return inertia(
             'Index/Index', 
